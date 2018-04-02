@@ -1,0 +1,55 @@
+{
+  "name": "www.qubed.io",
+  "version": "1.0.0",
+  "description": "Source for https://qubed.io",
+  "repository": "git@github.com:qubed-inc/www.qubed.io.git",
+  "author": "Brent Mealhouse <bmealhouse@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "prettier": {
+    "semi": false,
+    "useTabs": false,
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "singleQuote": true,
+    "bracketSpacing": false
+  },
+  "xo": {
+    "envs": [
+      "browser"
+    ],
+    "prettier": true,
+    "extends": "plugin:react/recommended",
+    "parser": "babel-eslint",
+    "settings": {
+      "import/resolver": {
+        "babel-module": {}
+      }
+    }
+  },
+  "dependencies": {
+    "next": "5.1.0",
+    "react": "16.3.0",
+    "react-dom": "16.3.0",
+    "styled-components": "3.2.5",
+    "suitcss-base": "4.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.0",
+    "babel-eslint": "8.2.2",
+    "babel-plugin-module-resolver": "3.1.1",
+    "babel-plugin-styled-components": "1.5.1",
+    "eslint": "4.19.1",
+    "eslint-import-resolver-babel-module": "4.0.0",
+    "eslint-plugin-prettier": "2.6.0",
+    "eslint-plugin-react": "7.7.0",
+    "prettier": "1.11.1",
+    "prop-types": "15.6.1",
+    "xo": "0.20.3"
+  }
+}
